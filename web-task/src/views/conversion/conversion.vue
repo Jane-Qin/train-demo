@@ -39,6 +39,11 @@ export default {
 
 	},
     convert () {
+			if(!this.form.from || !this.form.to || !this.form.data)	{
+				this.form.res="";
+				return;
+			}
+	
       this.form.data=String(this.form.data).trim();
       if (this.form.data.indexOf('.') == -1) {
         // 整数
