@@ -1,5 +1,6 @@
 <template>
   <div class="conversion">
+	  <section>进制转换</section>
     <section>
 		<span>进制：</span>
       <input v-model="form.from"/>
@@ -124,5 +125,9 @@ export default {
 }
 </script>
 <style scoped>
-
+.conversion{
+	width: 50%;
+    margin: 42px auto;
+    text-align: center;
+}
 </style>
