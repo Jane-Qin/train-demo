@@ -40,21 +40,21 @@ export default {
 
 	},
     convert () {
-			if(!this.form.from || !this.form.to || !this.form.data)	{
-				this.form.res="";
-				return;
-			}
-	
-      this.form.data=String(this.form.data).trim();
-      if (this.form.data.indexOf('.') == -1) {
-        // 整数
-        this.form.res = this.intConvert(this.form.data);
-      }else{
-		  let intNum=this.form.data.split('.')[0];   //整数位
-		  let decimalNum=this.form.data.split('.')[1];  //小数部分
-		  let i = this.intConvert(intNum);
-		  let j = this.decimalConvert(decimalNum);
-		  this.form.res = i+'.'+j
+		if(!this.form.from || !this.form.to || !this.form.data)	{
+			this.form.res="";
+			return;
+		}
+
+		this.form.data=String(this.form.data).trim();
+		if (this.form.data.indexOf('.') == -1) {
+			// 整数
+			this.form.res = this.intConvert(this.form.data);
+		}else{
+			let intNum=this.form.data.split('.')[0];   //整数位
+			let decimalNum=this.form.data.split('.')[1];  //小数部分
+			let i = this.intConvert(intNum);
+			let j = this.decimalConvert(decimalNum);
+			this.form.res = i+'.'+j
 		}
     },
 	intConvert(num){

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Conversion from '@/views/conversion.vue'
+import Conversion from '@/views/Conversion.vue'
 import CodeEditor from '@/views/CodeEditor.vue'
 
 Vue.use(Router)
