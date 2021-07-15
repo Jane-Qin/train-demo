@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
-    <a href="/#/conversion"><div class="item">进制转换</div></a>
-    <a href="/#/codeEditor"><div class="item">编辑代码文件和保存文件</div></a>
+    <router-link to="/conversion"><div class="item">进制转换</div></router-link>
+    <router-link to="/codeEditor"><div class="item">编辑代码文件和保存文件</div></router-link>
   </div>
 </template>
 

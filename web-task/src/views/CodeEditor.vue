@@ -7,7 +7,7 @@
 		</section>
 		<div id="monaco" style="height:500px"></div>
 	</div>
-	
+
 </template>
 <script>
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.main.js';
