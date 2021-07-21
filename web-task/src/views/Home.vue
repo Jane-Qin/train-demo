@@ -2,6 +2,8 @@
   <div class="menu">
     <router-link to="/conversion"><div class="item">进制转换</div></router-link>
     <router-link to="/codeEditor"><div class="item">编辑代码文件和保存文件</div></router-link>
+    <router-link to="/listNode"><div class="item">链表反转</div></router-link>
+    <router-link to="/fishTemplate"><div class="item">模板编译</div></router-link>
   </div>
 </template>
 
